@@ -28,28 +28,49 @@
 //CONTOH 3 
 //Keunggulan menggunakan arrow function
 
-class Person {
-    constructor(name) {
-        this.name = name
-    }
+// class Person {
+//     constructor(name) {
+//         this.name = name
+//     }
 
-    printNameArrow() {
-        setTimeout(() => {
-            console.log('Arrow :' + this.name)
-        }, 100)
-    }
+//     printNameArrow() {
+//         setTimeout(() => {
+//             console.log('Arrow :' + this.name)
+//         }, 100)
+//     }
 
-    printNameFunction() {
-        setTimeout(function(){
-            console.log('Function :' + this.name)
-        }, 100)
-    }
-}
+//     printNameFunction() {
+//         setTimeout(function(){
+//             console.log('Function :' + this.name)
+//         }, 100)
+//     }
+// }
 
-let person = new Person('Bob')
-person.printNameArrow()
-person.printNameFunction()
-console.log(this.name)
+// let person = new Person('Bob')
+// person.printNameArrow()
+// person.printNameFunction()
+// console.log(this.name)
 
 
 
+
+
+
+
+// Contoh SOAL
+// let mahasiswa = ['farid','nasi','udin'];
+
+//Versi F
+// let jumlahhuruf = mahasiswa.map(function (nama) {
+//     return nama.length;
+// });
+//Versi AF
+// let jumlahhuruf = mahasiswa.map(nama => nama.length);
+
+// console.log(jumlahhuruf);
+
+
+//Versi lebih rumit
+// let jumlahhuruf = mahasiswa.map(nama => ({nama: nama, jmlhuruf: nama.length }))
+// console.table(jumlahhuruf);
+ 
