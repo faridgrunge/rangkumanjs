@@ -64,3 +64,63 @@
 
 
 
+//CONTOH 1
+// let name = "Joni";
+// let age = 19;
+// let address = "London";
+
+// function displayPerson () {
+//   console.log(`His name is ${name}, he is ${age} years old, he lives in ${address}`)
+// }
+
+// function displayName(){
+//   console.log(`His name is ${name}`)
+// }
+
+// console.log(displayPerson())
+// console.log(displayName())
+
+
+
+
+
+
+
+// let person = {
+//   name: "Dio Brando",
+//   age: 100,
+//   address: "Egypt",
+//   displayPerson: function(){
+//     return `His name is ${this.name}, he is ${this.age} years old, he lives in ${this.address}`
+//   },
+//   displayName: function(){
+//     return `His name is ${this.name}`
+//   }
+// }
+
+// person.displayName()
+// console.log(person.name)
+// console.log(person.displayPerson())
+// console.log(person.displayName())
+
+
+
+
+
+
+let pengguna = {
+    nama : 'farid',
+    usia : 23,
+    email : 'faridgrunge@gmail.com',
+    artikel : ['7 tips sehat','buku ternak lele'],
+    login : function() {
+        console.log('anda login btw');
+    },
+    logout : function() {
+        console.log('anda logout')
+    }
+};
+
+pengguna.login()
+console.log(pengguna.artikel[2])
+
